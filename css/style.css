@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Open+Sans&family=Roboto:ital,wght@1,300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
+}
+
+header{
+   background-color:  #1e172f ;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   color: #7c7785;
+}
+
+.active{
+    color: white;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+ul li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+li a{
+    background: linear-gradient(to right, rgb(171, 4, 255),rgb(0, 179, 255));
+    color: white;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+}
+nav .morado{
+    width: 50%;
+    color: white;
+    background-color: #2e2550;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.morado .texto2{
+    margin-top: 150px;
+    margin-left: 20%;
+    margin-bottom: 100px;
+}
+.morado h1{
+    font-size: 100px;
+}
+.morado p{
+    font-size: 25px;
+}
+
+.morado .botonesmorado{
+    border: 1px solid #585173;
+    width:350px ;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.botonesmorado .blancoboton{
+    color: #f12e92;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+}
+.botonesmorado .transparenteboton{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+    height: 50px;
+    width: 130px;
+}
+nav .imagenhojas{
+    background-image: url(../img/hojasFondo.jpg);
+    background-size: cover;   
+    width: 50%;
+    display: flex;
+}
+
+.imagenhojas img{
+    height: 70vh;
+    margin-top: 150px ;
+    margin-left: 100px;
+    margin-bottom: 100px;
+}
+
+.blancobajonav{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blancobajonav h1{
+    padding: 80px;
+    color: #f41486;
+    font-size: 50px;
+}
+
+.blancobajonav .contenedor_todo{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.texto1 h2{
+    color: #f12e92;
+}
+
+.texto1 .hola{
+    font-size:35px;
+    padding: 30px;
+}
+
+.blancobajonav .contenedor_todo img{
+    width: 40%;
+    height: 20%;
+}
+
+.contenedor_todo .texto1{
+    width: 400px;
+}
+
+.fondomorado{
+    background-color: #2e2550;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fondomorado h2{
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.caja center p{
+    color: black;
+    width: 80%;
+    padding: 30px;
+}
+
+.fondomorado .hola{
+    color: white;
+    width: 50%;
+    padding: 20px;
+}
+
+
+.cajas{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+
+.caja{
+    background: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caja .rosa{
+    color: #ef449b;
+    font-size: 25px;
+}
+
+.caja .negro{
+    color: black;
+    font-size: 25px;
+}
+
+.caja .lineagris{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    height: 70px;
+
+}
+
+.lineagris h1{
+    font-size: 45px;
+}
+
+.lineagris button{
+    color: white;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+.lineagris .rosado{
+    background-color:#ef449b;
+}
+
+.lineagris .botonnegro{
+    background-color:#2e2550;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+footer .ultimo{
+    display: flex;
+}
+
+footer .rosadoletra{
+    color: #ef449b;
+    padding: 0 5px;
+}
+
+footer .imagenes{
+   display: flex;
+   gap: 15px;
+}
+
+
+@media screen and (max-width:1279px) {
+    .morado .texto2{
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    .contenedor_todo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lineagris button{
+        width: 100px;
+    }
+}
+
+@media  screen and (max-width:920px) {
+
+    .morado h1{
+        font-size: 70px;
+    }
+    
+    .morado .botonesmorado{
+        width: 270px;
+    }
+
+    .cajas{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav .morado{
+    width: 100%;
+    }
+
+    nav .imagenhojas{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagenhojas img{
+        margin: 50px;
+    }
+
+    .contenedor_todo img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .cajas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .caja{
+        width: 60%;
+        margin-bottom: 50px;
+    }
+
+    footer .ultimo{
+        flex-direction: column;
+    }
+    .fondomorado .hola{
+        color: white;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    
+    .morado h1{
+        font-size: 50px;
+    }
+
+    .morado p{
+        font-size: 15px;
+    }
+
+    .blancobajonav h1{
+        padding: 5px;
+        font-size: 30px;
+    }
+
+   header ul{
+       flex-wrap: wrap;
+       justify-content: center;
+   }
+
+   .imagenhojas img{
+       margin: 0 0 0 0;
+   }
+
+   footer{
+       flex-direction: column;
+   }
+
+   footer div{
+       padding: 10px;
+   }
+   .contenedor_todo .texto1{
+    width: 360px;
+   }
+
+   .caja{
+    width: 90%;
+    margin-bottom: 50px;
+}
+}
